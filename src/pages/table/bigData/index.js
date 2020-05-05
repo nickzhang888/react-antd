@@ -62,24 +62,24 @@ class bigData extends React.Component {
     //   item.title=item.title.replace(reg, <span className={styles.keyword}>{text}</span>)
     //   return item
     // })
-      //   searchData.map(item=>{
-      //      return   <Highlighter
-      //                   highlightStyle={{ backgroundColor: '#ffc069', padding: 0 }}
-      //                   searchWords={[this.state.searchText]}
-      //                   autoEscape
-      //                   textToHighlight={text.toString()}
-      //       />
-      //  })
-      // data.forEach(item => {
-      //   item['render'] = text => (
-      //     <Highlighter
-      //       highlightStyle={{ backgroundColor: '#ffc069', padding: 0 }}
-      //       searchWords={[this.state.searchText]}
-      //       autoEscape={true}
-      //       textToHighlight={text.toString()}
-      //     />
-      //   );
-      // });
+    //   searchData.map(item=>{
+    //      return   <Highlighter
+    //                   highlightStyle={{ backgroundColor: '#ffc069', padding: 0 }}
+    //                   searchWords={[this.state.searchText]}
+    //                   autoEscape
+    //                   textToHighlight={text.toString()}
+    //       />
+    //  })
+    // data.forEach(item => {
+    //   item['render'] = text => (
+    //     <Highlighter
+    //       highlightStyle={{ backgroundColor: '#ffc069', padding: 0 }}
+    //       searchWords={[this.state.searchText]}
+    //       autoEscape={true}
+    //       textToHighlight={text.toString()}
+    //     />
+    //   );
+    // });
     this.setState({
       searchText: text,
       searchData,
@@ -310,7 +310,7 @@ class bigData extends React.Component {
                 onOpenChange={this.onOpenChange}
                 mode="inline"
                 openKeys={this.state.openKeys}
-                
+
               >
                 {this.renderMenu(this.state.searchData)}
               </Menu>
