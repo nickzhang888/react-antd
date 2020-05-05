@@ -1,0 +1,95 @@
+.keyword {
+  :global {
+    .ant-menu-inline>.ant-menu-submenu>.ant-menu-submenu-title {
+      color: #ff8b14;
+    }
+  }
+}
+
+.footerTable {
+  font-weight: 900;
+  overflow-y: scroll;
+
+  :global {
+
+    // []为属性选择器,*表示所有,含义为所有属性为"ant-table-row-level-0",将类名class看做一个属性
+    // >表示只选择一代(儿子),:表示伪类,::表示伪元素,伪类偏向于元素的动作行为，伪元素偏向于元素的属性
+    .ant-table-row[class*='ant-table-row-level-0'] .ant-table-selection-column>span {
+      display: none;
+    }
+
+    .ant-table-body::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.failColor {
+  color: #FD5D59
+}
+
+// 内部滚动条样式
+.innerbox {
+  height: 60vh;
+  padding-right: 10px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  &:hover::-webkit-scrollbar-thumb {
+    display: inline-block;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(74, 78, 81, 0.3);
+    border-radius: 4px;
+    width: 8px;
+  }
+}
+
+.tableList {
+  .tableListOperator {
+    margin-bottom: 16px;
+
+    button {
+      margin-right: 8px;
+    }
+  }
+}
+
+.tableListForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 24px;
+      margin-right: 0;
+      display: flex;
+
+      >.ant-form-item-label {
+        width: auto;
+        line-height: 32px;
+        padding-right: 8px;
+      }
+
+      .ant-form-item-control {
+        line-height: 32px;
+      }
+    }
+
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+
+  .submitButtons {
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 24px;
+  }
+}

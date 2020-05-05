@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "435905",
+      "name": "发送",
+      "font_class": "fasong",
+      "unicode": "e7a1",
+      "unicode_decimal": 59297
+    },
+    {
+      "icon_id": "1177781",
+      "name": "revoke",
+      "font_class": "revoke",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "8777372",
+      "name": "refresh",
+      "font_class": "icon-test",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "8777388",
+      "name": "check",
+      "font_class": "icon-test1",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "8777389",
+      "name": "close",
+      "font_class": "icon-test2",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    }
+  ]
+}
