@@ -1,4 +1,4 @@
-import { Table, Input, Card, Button, Popconfirm, Checkbox, Form, message, InputNumber, Select, Modal } from 'antd';
+import { Table, Input, Card, Button, Checkbox, Form, message, InputNumber, Select, Modal } from 'antd';
 import React from 'react';
 import { connect } from "dva"
 import ExportJsonExcel from 'js-export-excel';
