@@ -1,10 +1,8 @@
 import darkTheme from '@ant-design/dark-theme';
 import path from 'path';
 import AntDesignThemePlugin from 'antd-theme-webpack-plugin'
-// import WebpackAssetsManifest from 'webpack-assets-manifest'
 import { black } from '@/components/theme';
 const themKeys = Object.keys(black);
-const version = new Date().valueOf()
 export default {
   plugins: [
     [
@@ -113,27 +111,5 @@ export default {
         generateOnce: false,
       }
     ])
-    // if (process.env.NODE_ENV === 'production') {
-    //   const appHostPath = path.join(__dirname, "./src/app.host.js")
-    //   config
-    //   .entry('dxta')
-    //   .add(appHostPath)
-    //   .end()
-
-    //   config.output.publicPath('/leap/dxta/api/dxta/').jsonpFunction('dxtajsonp')
-    //   config.output.filename('./[name].[chunkhash].' + version + '.js')
-    //   config.output.chunkFilename('./[name].[chunkhash].' + version + '.js')
-    //   config.plugin('manifest').use(WebpackAssetsManifest, [
-    //     {
-    //       output: 'dxta.json',
-    //       entrypoints: true,
-    //       entrypointKey: true,
-    //       publicPath: true,
-    //       transform(assets) {
-    //         return assets['dxta']
-    //       }
-    //     }
-    //   ])
-    // }
   }
 }

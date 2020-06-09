@@ -1,92 +1,78 @@
 @import "~antd/lib/style/themes/default.less";
-@primary-color: #f97114;
-@header: #2e2e2e;
+@header: #1890ff;
+@primary-color: #1890ff;
+// "@btn-primary-color":"#1890ff";
+@scrollbar-thumb: #a8a8a8;  
+@scrollbar-track: #f0f0f0; // 下拉;日期（hover）颜色
 
-@scrollbar-thumb: #3a3a3a; // 下拉,日期（hover）颜色
-@scrollbar-track: #222222;
+// @body-background: #fff;
+@layout-body-background: #f0f0f0;
+@layout-header-background: #001529;
+@component-background: #fff;
+// @card-background: #fff;
 
-@body-background: #2e2e2e;
-@layout-body-background: #2e2e2e;
-@component-background: #373939;
-// @card-background: #2e2e2e;
-//布局背景
-@layout-sider-background: #2e2e2e;
-@layout-header-background: #2e2e2e;
+// tooltip
+@tooltip-color: #fff;
+
 // text
-@text-color: #ffffff;
-@text-color-secondary: #fff;
-@label-color: #fff;
-//@icon-color: #efefef;
-@heading-color: #ffffff;
+@text-color: #585858; //淡灰
+@text-color-secondary: #585858;
+@label-color: #585858;
+@heading-color: #585858;
 
 // input select checkbox
-@input-bg: #373939;
-@item-active-bg: #543a25;
-@item-hover-bg: #543a25;
-//@select-dropdown-bg:#585858;
+@input-bg: #fff;
+@item-active-bg: #C4E8FF;
+@item-hover-bg: #C4E8FF;
+// @disabled-bg: #373939;
+@select-item-selected-bg: #C4E8FF;
+@select-item-active-bg: #C4E8FF;
 
-@select-item-selected-bg: #543a25;
-@select-item-active-bg: #543a25;
-//@disabled-bg: #373939;
+//Checkbox
+@checkbox-check-color: #fff;
 
-@checkbox-check-color: #585858;
+// Table
+// @table-header-color: #000000;
+// @table-header-bg: #E4EFF3;
+// @table-selected-row-bg: #C4E8FF;
+@table-row-hover-bg: #C4E8FF;
+@table-expanded-row-bg: #fff;
 
-// table
-@table-header-color: #efefef;
-@table-header-bg: #3f4143;
-@table-selected-row-bg: #543a25;
-@table-row-hover-bg: #543a25;
-@tabs-active-color: #373939;
-@tabs-card-head-background: #373939;
-@table-expanded-row-bg: #2e2e2e;
-// @modal-hea/ding-color: #fff;
-@disabled-color: #a4a4a4;
-@disabled-bg: #474747;
-@collapse-header-bg: #373939;
-@collapse-content-bg: #585858;
+// Menu
+@menu-dark-bg:#001529;
+// @menu-dark-color: #fff;
 
-@third-bg: #363738;
+// Modal
+// @modal-heading-color: #fff;
+@disabled-color: #fff;
+@disabled-bg: #bbbbbb;
 
-// inpur disabled
-@input-color-disabled: #474747;
+// Collapse
+@collapse-header-bg: #fafafa;
+@collapse-content-bg: #fff;
 
-//提单上传按钮
+//导航栏淡颜色
+@third-bg: #fff;
+@third-bg-second: #E5F5F5; //淡天藍色
+@third-color-bg: #6B6B6B; //淡灰色
+@third-color-a: #1890ff;
+@forth-color-btm: #6B6B6B;
+@input-color-disabled: #bbbbbb;
+@border-btm: #2CB1EE;
+// @card-background: #1890ff;
 @upData: #f97114;
-//
-@third-color-bg: #ffffff;
-@third-color-a: #f97114;
-@forth-color-btm: #ffffff;
-@nav-btm: #f97114;
-@need-bg: #2E2E2E;
-@third-bg-second: #363738;
-@border-btm: #f97114;
-
-
-@home-bg: #3a3a3a;
-
-
-@systemTree-bg: #f97114;
-//h3,h4标签颜色
-@h-color: #ffffff;
-
-@circle: #3e3e3e;
-//定时任务区分类背景
-@timeTask-bg: #2e2e2e;
-
-@recommend-bg: #585858;
-
+@nav-btm: #26a1d1;
+@need-bg: #fff; //白色
+@home-bg: #FAFAFA;
+@systemTree-bg: #e6f7ff;
+//h3h4颜色
+@h-color: #121212; //黑色
+@circle: #1890ff; //蓝色
+@timeTask-bg: #F1E9F1; //淡粉色
+@recommend-bg: #BAD4DC;
 //  自定义布局背景
-@layouts-bg: #2a2a2a;
-//平台助手背景
-@robot-bg: #464646;
-//输入框颜色
-@input-borderColor: #424446;
-//勾选框颜色
-@check-disabled: #d7d7d7;
-//shineout选择框背景
-@shineOut-select: #615f5f;
-
-//暴露变量
+@layouts-bg: #ebf2ff; //淡蓝
+@empty-color:#00000040;
 :root {
     --header: @header;
     --primary: @primary-color;
@@ -102,16 +88,10 @@
     --border-btm: @border-btm;
     --home-bg: @home-bg;
     --text-color: @text-color; //字体颜色
-    --layout-background: @body-background;
+    --body-background: @body-background;
     --systemTree: @systemTree-bg;
     --hColor: @h-color;
     --circle: @circle;
-    --timeTask-bg: @timeTask-bg;
-    --recommend-bg: @recommend-bg;
-    --layouts-bg: @layouts-bg;
-    --robot-bg: @robot-bg;
-
-    --calendar: @checkbox-check-color;
-    --input-text-color: @text-color;
-    --gray-100: @shineOut-select;
+    --empty-color:@empty-color;
+    --layout-header-background: @layout-header-background;
 }

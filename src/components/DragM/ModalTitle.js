@@ -5,8 +5,7 @@ class ModalTitle extends React.Component {
         this.modalDom.style.transform = transformStr;
     };
     componentDidMount() {
-        this.modalDom = document.getElementsByClassName("ant-modal-wrap" )[0];
-        //modal的class是ant-modal-wrap
+        this.modalDom = document.getElementsByClassName("ant-modal")[0];
     }
     render() {
         const { title } = this.props;

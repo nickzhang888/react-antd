@@ -18,7 +18,7 @@ export default class DragM extends React.Component {
         tx: 0,
         ty: 0
     };
-    start = event => {
+    docStart = event => {
         if (event.button != 0) {
             //只允许左键，右键问题在于不选择conextmenu就不会触发mouseup事件
             return;
@@ -50,14 +50,15 @@ export default class DragM extends React.Component {
     };
     docMouseUp = event => {
         document.removeEventListener("mousemove", this.docMove);
+        
     };
     componentDidMount() {
-        this.tdom.addEventListener("mousedown", this.start);
+        this.tdom.addEventListener("mousedown", this.docStart);
         //用document移除对mousemove事件的监听
         document.addEventListener("mouseup", this.docMouseUp);
     }
     componentWillUnmount() {
-        this.tdom.removeEventListener("mousedown", this.start);
+        this.tdom.removeEventListener("mousedown", this.docStart);
         document.removeEventListener("mouseup", this.docMouseUp);
         document.removeEventListener("mousemove", this.docMove);
         let center = document.getElementsByClassName("ant-modal-centered")[0]

@@ -1,373 +1,203 @@
 @import "./variables.less";
-div[id|="app-"] {
-  min-height      : 100%;
-  background-color: @body-background;
+.ant-empty-normal{
+    color: var(--empty-color)
 }
+// .primary-bg {
+//   background-color: @body-background;
+// }
 
-html,
-body,
-#root {
-  height          : 100%;
-  background-color: @body-background;
-}
+// .ant-btn-primary {
+//   color: @btn-primary-bg;
+// }
+// div[id|="app-"] {
+//   min-height: 100%;
+//   background-color: @body-background;
+// }
+// html,
+// body,
+// #root {
+//   height: 100%;
+//   background-color: @body-background;
+// }
+// *{
+//   padding: 0;
+//   margin: 0;
+// }
+// img {
+//   display: inline-block;
+// }
 
-* {
-  padding: 0;
-  margin : 0;
-}
 
-img {
-  display: inline-block;
-}
-
-
-::-webkit-scrollbar {
+&::-webkit-scrollbar {
   width: 5px;
 }
 
-::-webkit-scrollbar-thumb {
-  border-radius   : 5px;
+&::-webkit-scrollbar-thumb {
+  border-radius: 5px;
   background-color: @scrollbar-thumb;
 }
 
-::-webkit-scrollbar-corner {
+&::-webkit-scrollbar-corner{
   background-color: @scrollbar-track;
 }
 
-::-webkit-scrollbar-track {
+&::-webkit-scrollbar-track {
   background-color: @scrollbar-track;
 }
 
-//气泡背景 颜色
-.ant-tooltip-inner {
-  background-color: @third-bg-second;
-}
-
-//下拉框搜索背景
-.ant-select-tree-dropdown .ant-select-dropdown-search .ant-select-search__field {
-  background: @third-bg
-}
-
-.ant-layout {
-  min-height: 100%;
-}
-
-.ant-input-group-addon {
-  background: @primary-color;
-}
-
-//模态框中间部分颜色
-.ant-modal-body {
-  background: @body-background;
-}
-
-//输入框边框颜色
-.ant-input {
-  border: 1px solid @disabled-bg;
-}
-
-.ant-select-selection {
-  border: 1px solid @disabled-bg;
-}
-
-.ant-calendar-last-month-cell .ant-calendar-date {
-  color: none !important;
-}
-
-// 多选
-.ant-select-selection--multiple li.ant-select-selection__choice {
-  background-color: @checkbox-check-color;
-}
-
-//表格固定列划上背景颜色
-.ant-table-tbody>tr.ant-table-row-hover:not(.ant-table-expanded-row)>td{
-  background:@select-item-active-bg;
-}
-
-
-//排序行
-.ant-table-column-has-actions .ant-table-column-has-sorters .ant-table-column-sort .ant-table-row-cell-break-word {
-  background-color: @table-selected-row-bg
-}
-
-.ant-table-thead>tr>th.ant-table-column-sort {
-  background-color: @table-selected-row-bg
-}
-
-// 表头border
-.ant-table-thead {
-  border-top: 1px solid @disabled-bg  !important;
-}
-
-.ant-table-thead>tr:first-child>th:last-child {
-  border-right: none;
-  border-left : none;
-}
-
-.ant-table-thead>tr:first-child>th:last-child {
-  border-top: 1px solid @disabled-bg ;
-}
-
-.ant-table-bordered .ant-table-tbody>tr>td {
-  border-right: 1px solid @disabled-bg ;
-}
-
-.ant-table-thead>tr>th {
-  //color      : #f0f0f0;
-  border-top   : 1px solid @disabled-bg ;
-  border-right : 1px solid @disabled-bg ;
-  border-bottom: 1px solid @disabled-bg  !important;
-}
-
-.ant-table-thead>tr>th[colspan] {
-  border-bottom: 1px solid @disabled-bg  !important;
-}
-
-//数字边框
-.ant-input-number-input {
-  color: @text-color
-}
-
-//列表提示
-.ant-empty-description {
-  color: @text-color
-}
-
-.ant-tag {
-  background: @table-header-bg
-}
-
-//固定列加顶部边框
-.ant-table-fixed-right .ant-table-thead>tr:first-child>th:last-child {
-  border-top: 1px solid @disabled-bg
-}
-
-//筛选背景悬停颜色
-.ant-table-thead>tr>th.ant-table-column-has-actions.ant-table-column-has-sorters:hover {
-  background: @table-header-bg;
-}
-
-//表格底边框颜色
-.ant-table-tbody>tr>td {
-  border-bottom: 1px solid @disabled-bg  !important;
-}
-
-//表格底部
-.ant-table-footer {
-  background: @collapse-header-bg
-}
-
-//树选择行背景
-.ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
-  background: @primary-color;
-}
-//tree禁用颜色
-
-li.ant-tree-treenode-disabled>span:not(.ant-tree-switcher),
-li.ant-tree-treenode-disabled>.ant-tree-node-content-wrapper,
-li.ant-tree-treenode-disabled>.ant-tree-node-content-wrapper span {
-  color: #a4a4a4 !important;
-}
-
-
-li.ant-select-tree-treenode-disabled > span:not(.ant-select-tree-switcher), li.ant-select-tree-treenode-disabled > .ant-select-tree-node-content-wrapper, li.ant-select-tree-treenode-disabled > .ant-select-tree-node-content-wrapper span{
-  color:#a4a4a4 !important;
-}
-
-
-.ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis,
-.ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis {
-  color: #a4a4a4 !important;
-}
-
-//分页
-.ant-pagination-disabled .ant-pagination-item-link {
-  color: #a4a4a4 !important;
-}
-
-
-
-//禁用勾选框字体颜色
-.ant-checkbox-disabled+span {
-  color: @text-color;
-}
-
-.ant-checkbox-disabled .ant-checkbox-inner {
-  background-color: @check-disabled;
-
-}
-
-//小竖杠
-.ant-divider {
-  background: none;
-}
-
-button[class~="ant-btn-primary"] {
-  color: #ffffff;
-
-  &:hover {
-    color: #ffffff;
+.innerbox {
+    height: 60vh;
+    padding-right: 10px;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 3px;
+    }
+    &::-webkit-scrollbar-thumb {
+      display: none;
+    }
+    &:hover::-webkit-scrollbar-thumb {
+      display: inline-block;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(74, 78, 81, 0.3);
+      border-radius: 4px;
+      width: 8px;
+    }
   }
+// //气泡背景 颜色
+// .ant-tooltip-inner{
+//   background-color:@third-bg-second;
+//   color:#fff
+// }
 
-  &:active {
-    color: #ffffff;
-  }
-}
+// //下拉框搜索背景
+// .ant-select-tree-dropdown .ant-select-dropdown-search .ant-select-search__field{
+//   background: @third-bg
+// }
+// .ant-layout {
+//   min-height: 100%;
+// }
+// .ant-input-group-addon{
+//   background:@primary-color;
+// }
+// // 多选
+// .ant-select-selection--multiple li.ant-select-selection__choice {
+//   background-color: @checkbox-check-color;
+// }
+// // 表头border
+// .ant-table-thead {
+//   border: none;
+// }
+// .ant-table-thead>tr>th {
+//   //color: #f0f0f0;
+//   border: none;
+//   // border-right: 1px solid #55595b;
+//   font-weight: 700;
+// }
 
-button[class="ant-btn"] {
-  border-color: @primary-color;
-  color       : @primary-color;
-  background  : none;
-}
+// //小竖杠
+// .ant-divider{
+//   background:none;
+// }
 
-button[class~='ant-btn'] {
-  &:hover {
-    background: undefined;
-    // outline: #ffffff
-  }
+// button[class~="ant-btn-primary"] {
+//   color: #ffffff;
+//   &:hover {
+//     color: #ffffff;
+//   }
+//   &:active {
+//     color: #ffffff;
+//   }
+// }
+// button[class="ant-btn"] {
+//   border-color: @primary-color;
+//   color: @primary-color;
+//   background: none;
+// }
+// .ant-input[disabled]{
+//   background:@input-color-disabled
+// }
+// .ant-card,.ant-card-body {
+//   background-color:@layout-body-background;
+// }
+// div.ant-notification-notice-content {
+//   background-color: @component-background;
+// }
 
-}
+// div.ant-drawer-title, div.ant-modal-title,
+// div.ant-notification-notice-message,
+// div.ant-notification-notice-description
+// .ant-collapse > .ant-collapse-item > div.ant-collapse-header{
+//   color: @text-color;
+// }
 
-//选择框箭头颜色
-.ant-select-arrow {
-  color: #a4a4a4 !important
-}
 
-.ant-input[disabled] {
-  background: @input-color-disabled
-}
-
-.ant-card,
-.ant-card-body {
-  background-color: @layout-body-background;
-}
-
-div.ant-notification-notice-content {
-  background-color: @component-background;
-}
-
-//弹框字体颜色
-div.ant-drawer-content,
-div.ant-notification-notice-content,
-div.ant-collapse,
-div.ant-modal-content {
-  color: @text-color;
-}
-
-//气泡
-.ant-tooltip-inner {
-  color: #ffffff
-}
-
-// 第三方组件 shineout
-//输入框 下拉选择框颜色
-.so-input {
-  border-color: @disabled-bg;
-  box-shadow  : none;
-}
-
-.so-select {
-  border-color: @disabled-bg;
-  box-shadow  : none;
-}
-
+// // 第三方组件 shineout
 .so-input-focus {
   border-color: @primary-color;
-  box-shadow  : none;
+  box-shadow: none;
 }
-
 .so-scroll-inner {
   background-color: @component-background;
-
   a {
     color: @text-color;
   }
-
-  .so-select-option.so-select-active,
-  .so-select-option:hover {
-    color           : @text-color;
+  .so-select-option.so-select-active, .so-select-option:hover {
+    color: @text-color;
     background-color: @item-hover-bg;
-
     >svg {
       fill: @primary-color;
     }
   }
 }
 
-//小箭头
-.so-tree-no-line .so-tree-icon-plus:hover span,
-.so-tree-no-line .so-tree-icon-sub:hover span {
-  border-left-color: @disabled-bg;
-}
-
-//shineout下拉选择
-.so-select-item .so-select-ban {
-  background: @collapse-content-bg;
-}
-
-//勾选框颜色
-.so-checkinput-checked i.so-checkinput-checkbox.so-checkinput-indicator {
-  border-color: @primary-color;
-  background  : @primary-color;
-}
-
-//选择框字体颜色
-.so-select-ellipsis {
-  color: @text-color;
-}
-
-//时间选择框背景
-.ant-calendar-time-picker-select-option-selected {
-  background: @third-bg-second;
-}
-
-//时间框图标
-.ant-calendar-picker-icon {
-  color: #a4a4a4 !important;
-}
-
 .so-input {
   background-color: @component-background;
-
   &:hover {
     border-color: @primary-color;
   }
 }
-
 .so-scroll-bar {
   background-color: @scrollbar-track;
 }
-
 .so-scroll-handle {
   background-color: @scrollbar-thumb;
 }
+// .so-select-result .so-select-item{
+//   background: var(--recommend-bg);
+//   color:var(--text-color);
+//   border: 1px solid #e8e8e8;
+// }
+// .span.so-select-option{
+//   background: var(--layout-background);
+// }
+// .so-select-result .so-select-item{
+//   white-space: nowrap;
+// }
+// .so-select-input{
+//   color: var(--text-color);
+// }
+// .so-select-control-keyboard .so-select-option.so-select-hover{
+//   color: var(--text-color);
+//   background:var(--recommend-bg)
+// }
+// .so-select-box-list, .so-select-options{
+//   color: var(--text-color);
+//   background: var(--robot-bg);
+// }
+// .so-select-box-list, .so-select-options:hover{
+//   color: var(--text-color);
+// }
+// .so-select-control-mouse .so-select-option:hover{
+//   color: var(--text-color);
+//   background: var(--robot-bg);
+// }
+  
+// //时间选择框背景
+// .ant-calendar-time-picker-select-option-selected{
+//   background:@third-bg-second;
+// }
 
-//---------黑色主题------------
-// .so-checkinput:hover i.so-checkinput-indicator,
-// .so-checkinput:focus i.so-checkinput-indicator {
-//   border-color: var(--primary-color, #f97114) !important;
-// }
-//复选框对号
-// .so-checkinput-checked i.so-checkinput-checkbox.so-checkinput-indicator {
-//   border-color: var(--primary-color, #f97114) !important;
-//   background  : var(--primary-color, #f97114) !important;
-// }
-i.so-checkinput-checkbox.so-checkinput-indicator:after {
-  border-color: #585858 !important;
-  transform   : rotate(-45deg);
-}
 
-// 复选框背景色
-i.so-checkinput-checkbox.so-checkinput-indicator {
-  border-color: var(--primary-color, #585858);
-  background  : var(--primary-color, #585858);
-}
-
-// 全选复选框
-// .so-checkinput-indeterminate i.so-checkinput-indicator {
-//   border-color: var(--primary-color, #f97114) !important;
-//   background  : var(--primary-color, #f97114) !important;
-// }
-// .thridNav{
-//  background:@third-bg;
-// }
+     

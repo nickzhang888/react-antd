@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { Form, Col, Input, Checkbox, DatePicker, Select, Button, Card,message} from 'antd';
+import { Form, Col, Input, Checkbox, DatePicker, Select, Button, Card, message } from 'antd';
 import { connect } from "dva"
 import moment from "moment"
 const FormItem = Form.Item
@@ -181,7 +181,7 @@ systemParam.propTypes = {
     list: PropTypes.array,
 }
 systemParam.defaultProps = {
-    list:[],
+    list: [],
 }
 
 export default systemParam;
