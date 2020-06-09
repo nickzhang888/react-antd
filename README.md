@@ -10,7 +10,7 @@ umi-react快速开发框架
 封装列表增删改查
 表格封装
 高阶组件
-e-chart图表
+echarts图表
 登录登出
  
 git clone https://github.com/nickzhang888/react
