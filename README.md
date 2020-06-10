@@ -1,16 +1,1 @@
-<html>
-umi-react快速开发框架 介绍 基于umi搭建一个快速开发框架，react 应用框架,antd为ui框架。umi 以路由为基础的，支持类 next.js 的约定式路由，以及各种进阶的路由功能，并以此进行功能扩展，比如支持路由级的按需加载。 基于umi的基础上，开发出一个框架通用业务功能  <h2>框架功能列表</h2>   
-全局layout   
-换肤  
-系统管理  
-国际化  
-封装列表增删改查  
-字体图标库  
-表格封装  
-高阶组件  
-echarts图表   
-登录登出  
-  
-git clone https://github.com/nickzhang888/react   
-yarn && yarn start  
-</html>
+<p style="margin:0;">umi-react快速开发框架 介绍 基于umi搭建一个快速开发框架，react 应用框架,antd为ui框架。umi 以路由为基础的，支持类 next.js 的约定式路由，以及各种进阶的路由功能，并以此进行功能扩展，比如支持路由级的按需加载。 基于umi的基础上，开发出一个框架通用业务功能</p><p style="margin:0;"><br /></p><h2 style="margin:0;">框架功能列表&nbsp;</h2><p style="margin:0;">全局layout&nbsp;</p><p style="margin:0;">换肤</p><p style="margin:0;">系统管理</p><p style="margin:0;">国际化</p><p style="margin:0;">封装列表增删改查</p><p style="margin:0;">字体图标库</p><p style="margin:0;">表格封装</p><p style="margin:0;">高阶组件</p><p style="margin:0;">echarts图表&nbsp;</p><p style="margin:0;">登录登出</p><p style="margin:0;"><br /></p><p style="margin:0;">git clone https://github.com/nickzhang888/react&nbsp;</p><p style="margin:0;">yarn &amp;&amp; yarn start</p>
