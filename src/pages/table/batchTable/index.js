@@ -196,14 +196,14 @@ class BatchTable extends React.Component {
 
   downloadExcel = () => {
     const { listData: { data } } = this.props
-    var option = {};
+    let option = {};
     let dataTable = [];
-    // \t可以使数字不用使用科学计数法
+    // \t可以使数字不用使用科学计数法,数字会自动向右对齐,字符串向左对齐
     if (data) {
       for (let i in data) {
         let obj = {
           '姓名': data[i].name,
-          '年龄': data[i].age,
+          '年龄': `${data[i].age}`,
           '性别': data[i].sex,
           '手机号码': `\t${data[i].mobile}`,
           '住址': data[i].address,
@@ -218,7 +218,7 @@ class BatchTable extends React.Component {
         sheetName: '个人信息',
         sheetFilter: ['姓名', '年龄', '性别', "手机号码", "住址"],
         sheetHeader: ['姓名', '年龄', '性别', "手机号码", "住址"],
-        columnWidths: [8, 8, 8, 8, 8]
+        columnWidths: new Array(5).fill(8)
       }
     ];
 
