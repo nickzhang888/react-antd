@@ -201,21 +201,30 @@ class Dividend extends Component {
       }
       dataTable.push(obj);
     }
-    var sheet = xlsx.utils.json_to_sheet(dataTable, { raw: true, });
+    //生成表格
+    var sheet = xlsx.utils.json_to_sheet(dataTable);
     var tmpdata = xlsx.utils.sheet_add_json(sheet, dataTable, { origin: "A2" });
     // tmpdata["F2"] = { t: "n",v:122.00}
+    // 设置B2单元格样式
     tmpdata["B2"].s = { font: { sz: 14, bold: true, color: { rgb: "FFFFAA00" } }, fill: { bgColor: { indexed: 64 }, fgColor: { rgb: "FFFF00" } } };
     // tmpdata["F2"].t = 'n'
-
-    tmpdata["!cols"] = [{ wpx: 120 }, { wpx: 120 }, { wpx: 120 }, { wpx: 120 }, { wpx: 120 }, { wpx: 120 }, { wpx: 150 }, { wpx: 120 },
-    { wpx: 120 }, { wpx: 120 }, { wpx: 120 }, { wpx: 120 }, { wpx: 120 }, { wpx: 120 }, { wpx: 120 }, { wpx: 120 }, { wpx: 140 }
+    // 设置每个单元格宽度
+    tmpdata["!cols"] = [
+      { wpx: 120 }, 
+      { wpx: 120 }, 
+      { wpx: 120 }, 
+      { wpx: 120 }, 
+      { wpx: 120 }, 
+      { wpx: 140 }, 
+      { wpx: 130 }, 
+      { wpx: 150 },
     ];
     //给A1单元格赋值
     tmpdata["A1"] = {
       t: "s",
       v: '分红人员信息表'
     };
-    // 设置字体样式
+    // 设置A1标题字体样式
     tmpdata["A1"].s = {
       font: {
         name: '宋体',
